@@ -1,0 +1,37 @@
+<template>
+    <div class="calculator-container">
+        <lightning-input type="text" label="Input 1" value={operand1} onchange={handleOperandChange}></lightning-input>
+        <lightning-input type="text" label="Input 2" value={operand2} onchange={handleOperandChange}></lightning-input>
+
+        <div class="buttons">
+            <lightning-button class="button" label="1" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="button" label="2" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="button" label="3" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="operator-button" label="+" onclick={handleOperatorClick}></lightning-button>
+        </div>
+
+        <div class="buttons">
+            <lightning-button class="button" label="4" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="button" label="5" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="button" label="6" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="operator-button" label="-" onclick={handleOperatorClick}></lightning-button>
+        </div>
+
+        <div class="buttons">
+            <lightning-button class="button" label="7" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="button" label="8" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="button" label="9" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="operator-button" label="*" onclick={handleOperatorClick}></lightning-button>
+        </div>
+
+ 
+
+        <div class="buttons">
+            <lightning-button class="button" label="0" onclick={handleNumberClick}></lightning-button>
+            <lightning-button class="operator-button" label="/" onclick={handleOperatorClick}></lightning-button>
+            <lightning-button class="operator-button" label="=" onclick={calculateResult}></lightning-button>
+        </div>
+
+        <lightning-input type="text" class="result" label="Result" value={result} disabled></lightning-input>
+    </div>
+</template>

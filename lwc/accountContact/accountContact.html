@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Related Contacts">
+        <div class="slds-m-around_medium">
+            <template for:each={contacts} for:item="contact">
+                <div key={contact.Id} class="slds-m-vertical_medium">
+                <lightning-input value={contact.Name} label = "Name"> </lightning-input>
+                <lightning-input value={contact.Email} label = "Email"> </lightning-input>
+                <lightning-input value={contact.Phone} label = "phone"> </lightning-input>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
+

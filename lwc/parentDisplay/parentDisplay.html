@@ -1,0 +1,13 @@
+<template>
+    <lightining-card>
+        <div class="parent_container">
+            <lightining-formatted-text value= "{contactName}"></lightining-formatted-text>
+            <lightining-formatted-text value= "{contactPhone}"></lightining-formatted-text>
+        </div>
+             <template for:each={contactList} for:item="contactItem">
+                <c-child-display oncontactinvoke={captureContactInformation} contact-name={contactItem.Name} contact-phone={contactItem.Phone} key={contactItem.Id}>
+                </c-child-display>
+             </template>
+        </div>
+    </lightining-card>
+</template>

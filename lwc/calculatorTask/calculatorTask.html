@@ -1,0 +1,23 @@
+<template>
+    <div class="calculator">
+        <input type="text" class="result" value={result} readonly></input>
+        <div class="buttons">
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="1">1</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="2">2</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="3">3</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="+">+</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="4">4</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="5">5</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="6">6</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="-">-</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="7">7</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="8">8</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="9">9</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="*">*</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="0">0</button>
+            <button onclick={calculate}>=</button>
+            <button class="slds-button slds-button_neutral" onclick={appendToResult} data-value="/">/</button>
+            <button onclick={clearResult}>C</button>
+        </div>
+    </div>
+</template>
